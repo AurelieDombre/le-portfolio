@@ -1,0 +1,270 @@
+/* Couleur */
+html{
+    --text-font-family: 'Goldman', cursive;
+    --title-font-family: 'Passion One', cursive; 
+    --title-color : rgb(0, 247, 255);
+    --color-hover :rgb(0, 247, 255);
+    --texte-color :  rgba(29, 93, 231, 0.76);
+    --bg-color : rgba(0, 31, 51); 
+}
+
+
+header {
+    color: white;
+    text-align: center; 
+    margin: auto; 
+}
+
+.entete {
+    background-image: url(../Pictures/—Pngtree—digital\ global\ connection\ network\ technology_1181223.jpg);
+    max-width: 110em;
+    height: 40em;
+    padding-top: 40px;
+    display: block;
+}
+
+
+
+h3 {
+    color: var(--title-color);
+    font-family: 'Press Start 2P', cursive, sans-serif;
+    margin: 10px;
+    padding-top: 20px;
+    text-transform: capitalize;
+}
+    
+h3::before {
+    content:"<" ;
+}
+h3::after {
+    content: ">";
+}
+
+/* Titre  */
+h1{
+    padding: 0.5em;
+    color: var(--texte-color );
+    display: inline;
+    max-width: 110em;
+    font-family: 'Goldman', cursive;
+    
+    text-shadow: var(--title-color) 1px 0 10px;
+}
+
+h2{
+    margin: 10px;
+    padding: 0.3em;
+    color: var(--texte-color );
+    font-size: 56px;
+    font-family: 'Goldman', cursive;
+    font-weight: bold;
+    max-width: 110em;
+    text-shadow: var(--color-hover) 1px 0 10px;
+}
+
+
+h3 {
+    text-align: center;
+    font-family: 'Press Start 2P', cursive, sans-serif;
+}
+
+
+
+.corp {
+    display: block;
+    margin: auto;
+    background-color: var(--bg-color);   
+    max-width: 110em;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: gray;
+    display: block;
+    text-align: center;
+    overflow: scroll;
+    max-width: 110em;
+    font-size: 16px;
+    color: white;
+}
+
+nav {
+    text-align: center;
+    display: block; 
+    /* flex-wrap: wrap;    */
+    margin-top: 20em;
+    box-shadow: 3px 3px 3px 3px var(--color-hover);
+    font-weight: bold;
+    font-size: 20px;
+    max-width: 110em;
+    padding: 0.5em;
+    
+}
+
+a{
+    padding: 0.5em;
+    text-decoration: none;
+    color: var(--title-color);    
+    text-shadow: 1em ; 
+    position: sticky;   
+    margin-bottom: 1em;
+    margin-left: 1em;
+    /* display: block; */
+}
+
+.nav_contact {
+   margin-right: 1em;
+}
+
+nav a:hover {
+    box-shadow: 3px 3px 3px 3px var(--color-hover);  
+    
+}
+
+.projets__img_AI:hover {
+    box-shadow: 3px 3px 3px 3px var(--color-hover);  
+}
+
+.projets__img_languages:hover {
+    box-shadow: 3px 3px 3px 3px var(--color-hover);  
+}
+
+/* images */
+
+.slide__conteneur--img img {
+    width: 30em;
+    display: block;
+    flex-wrap: wrap;
+    }
+
+.projets {
+    display: block; 
+    width: 100%;
+    height: 100%;
+    
+}
+.projets__img_AI {
+    width: 21.6em;
+    margin: 20px auto;
+    
+}
+
+.projets__img_languages {
+    width: 20.5em;
+    margin: 20px auto;
+}
+
+
+/* slider */
+ .slider {
+  position: relative;
+  height: 40em;
+  width: 40em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 33%;
+  margin-top: 5%;
+}
+
+.slider a{
+    
+}
+
+.slider__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.slider__img--current {
+  opacity: 1;
+  z-index: 1;
+}
+
+.slider__btn {
+  position: relative;
+  z-index: 2;
+  font-weight: bold;
+} 
+
+/*  slider nav */
+.slider__nav {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.slider__nav-item {
+  border: 0;
+  padding: 0;
+  margin: 0.5em;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background-color: white;
+} */
+
+
+.btn {
+    margin-right: 0.25rem;
+  }
+
+.btn {
+    background-color: var(--color-hover);
+    border: 0;
+    border-radius: 3px;
+    color: white;
+    padding: 0.5rem;
+    display: inline-block;
+  }
+  
+.btn:hover, .btn:focus {
+    background-color: rgb(18, 106, 109);
+    color: white;
+}
+
+/* bas de page */
+.contact {
+    text-align: center;
+    border: 2px solid gray;    
+    box-shadow: 3px 3px 3px 3px var(--color-hover);
+    max-width: 110em;
+    }
+
+footer {
+    text-align: center;
+    color: var(--texte-color);
+    max-width: 1500px;
+    padding-top: 10px;
+    max-width: 110em;
+}
+
+.contact a {
+    padding: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* *******************! Contact ********************************* */
+
+.entete_contact{
+    background-image: url(../Pictures/—Pngtree—mobile\ desktop\ computer_328529.jpg);
+    max-width: 110em;
+    height: 40em;
+    padding-top: 40px;
+    display: block;
+}
+
